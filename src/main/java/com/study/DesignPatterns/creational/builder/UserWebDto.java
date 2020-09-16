@@ -1,4 +1,4 @@
-package com.study.DesignPatterns.builder;
+package com.study.DesignPatterns.creational.builder;
 
 /**
  *  Description:
