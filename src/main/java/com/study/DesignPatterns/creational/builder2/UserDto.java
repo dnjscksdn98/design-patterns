@@ -1,6 +1,6 @@
-package com.study.DesignPatterns.builder2;
+package com.study.DesignPatterns.creational.builder2;
 
-import com.study.DesignPatterns.builder.Address;
+import com.study.DesignPatterns.creational.builder.Address;
 
 import java.time.LocalDate;
 import java.time.Period;
