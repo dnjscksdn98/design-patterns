@@ -11,12 +11,26 @@ package com.study.DesignPatterns.creational.singleton;
  */
 public class LazyRegistryWithDCL {
 
+  /**
+   *  Description:
+   *    - Private constructor to prevent instantiation outside this class and prevent subclassing
+   */
   private LazyRegistryWithDCL() {
 
   }
 
+  /**
+   *  Description:
+   *    - The lazy singleton instance
+   *    - Note the use of volatile
+   */
   private static volatile LazyRegistryWithDCL INSTANCE;
 
+  /**
+   *  Description:
+   *    - This method implements the double check locking
+   *    @return Instance of {@link LazyRegistryWithDCL}
+   */
   public static LazyRegistryWithDCL getInstance() {
     if (INSTANCE == null) {
       synchronized (LazyRegistryWithDCL.class) {
